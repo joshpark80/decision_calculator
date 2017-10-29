@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+        <style> * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }</style>
+    </head>
+<body class="handle--not-loaded" style="min-height:75em; padding-top:4.5rem;">
+
+
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">Calculator</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li> -->
+            </ul>
+            <!--<form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          </div>
+        </nav>
+
+        <div class="container">
+            <form action="" method="post" role="form">
+              <div class="form-group">
+                <label for="saving">매월 모을 수 있는 금액</label>
+                <input type="text" class="form-control" id="saving" name="saving" aria-describedby="savingHelp" placeholder="숫자를 입력해주세요" value="1000000">
+                <small id="savingHelp" class="form-text text-muted">매월 일정한 금액이 아니어도 평균적으로 가능한 최대금액을 알려주세요.</small>
+                <label for="currentsaving">현재 저축액</label>
+                <input type="text" class="form-control" id="currentsaving" name="currentsaving" aria-describedby="currentsavingHelp" placeholder="숫자를 입력해주세요" value="100000000">
+                <small id="currentsavingHelp" class="form-text text-muted">매월 일정한 금액이 아니어도 평균적으로 가능한 최대금액을 알려주세요.</small>
+                <!--<label for="goal">3년 내 목표금액</label>
+                <input type="text" class="form-control" id="goal" name="goal" aria-describedby="emailHelp" placeholder="숫자를 입력해주세요">-->
+                <label for="rate">연 평균 수익률</label>
+                <input type="text" class="form-control" id="rate" name="rate" aria-describedby="rateHelp" placeholder="숫자를 입력해주세요" value="6.0">
+                <small id="rateHelp" class="form-text text-muted">평균적으로 기대하는 연수익률을 입력해주세요. 추천하는 숫자는 6%입니다.</small>
+                <label for="age">현재 나이</label>
+                <input type="text" class="form-control" id="age" name="age" aria-describedby="ageHelp" placeholder="숫자를 입력해주세요" value="35">
+                <small id="ageHelp" class="form-text text-muted">현재 나이를 알려주세요. 해당 나이의 연초라고 가정합니다.</small>
+                <label for="retiringage">은퇴 나이</label>
+                <input type="text" class="form-control" id="retiringage" name="retiringage" aria-describedby="retiringageHelp" placeholder="숫자를 입력해주세요" value="60">
+                <small id="retiringageHelp" class="form-text text-muted">은퇴를 원하는 나이를 알려주세요. 해당 나이의 연말이라고 가정합니다.</small>
+              </div>
+              <button type="submit" class="btn btn-success">결과 보기</button>
+            </form>
+
+            <p class="lead">현재 저축이 {{currentsaving}}원이고 <br> 연 {{rate}}%로 매월 {{saving}}원씩 모았을 때 <br> {{period}}년 후에 {{result}}원을 모을 수 있습니다.</p>
+          </div>
+
+ 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>
